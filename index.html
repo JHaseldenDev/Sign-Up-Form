@@ -5,57 +5,72 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign Up Form</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Norse&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <div class="image-sidebar background-image">
-        <img src="https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Odin Logo">
-      </div>
-
-    <div class="form-container">
-      <header>
-        <h1>Logo</h1>
-      </header>
-      <div class="form-description">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-
-      <form>
-        <h2>Create Account</h2>
-        <div class="form-group">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" placeholder="Name" required>
-        </div>
-
-        <div class="form-group">
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" placeholder="Email" required>
-        </div>
-
-        <div class="form-group">
-          <label for="phone">Phone:</label>
-          <input type="tel" id="phone" name="phone" placeholder="(xxx)-xxx-xxxx">
-        </div>
-
-        <div class="form-group">
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-            <input type="checkbox" id="show-password-toggle">
-            <label for="show-password-toggle">Show Password</label>
-          </div>
-
-        <div class="form-group">
-          <label for="confirm-password">Confirm Password:</label>
-          <input type="password" id="confirm-password" name="confirm-password" required>
-        </div>
-
-        <div id="error-field"></div>
-
-        <button type="submit" class="create-account-button">Create Account</button>
-      </form>
+  <div class="sunshineimg">
+    <img src="./images/aaron-burden-BTubi6qaY6Q-unsplash.jpg" alt="sunrise photo">
+    <div class="logo-overlay">
+      <img src="./images/sunshinelogo.jpg" alt="sunshine logo">
+      <h1 class="odin-text">Sunshine</h1>
+    </div>
+    <div class="image-credit">
+      Photo by <a href="https://unsplash.com/@aaronburden" target="_blank">Aaron Burden</a> on Unsplash
     </div>
   </div>
-
+  <div class="main">
+    <div class="form-description">
+      <p>This is not a real online service! You know you need some sunshine in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+      <p>You <em>know</em> you want to.</p>
+    </div>
+    <form action="" method="post">
+      <fieldset>
+        <h2>Lets do this!</h2>
+        <div class="row">
+          <div>
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" placeholder="First Name" required>
+          </div>
+          <div>
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" placeholder="Last Name" required>
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Email" required>
+          </div>
+          <div>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" placeholder="(xxx)-xxx-xxxx" required>
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+          </div>
+          <div>
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+          </div>
+        </div>
+        <div class="show-password">
+          <input type="checkbox" id="show-password-toggle">
+          <label for="show-password-toggle">Show Password</label>
+        </div>
+      </fieldset>
+      <div id="error-field"></div>
+      <div>
+        <input type="submit" id="submit" value="Create Account">
+      </div>
+    </form>
+    <div class="login">
+      <p>Already have an account? <a href="">Log In</a></p>
+    </div>
+  </div>
   <script src="script.js"></script>
+  <footer class="footer">Created by JHaseldenDev 2023</footer>
 </body>
 </html>
